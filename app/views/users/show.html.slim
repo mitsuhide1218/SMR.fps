@@ -1,0 +1,14 @@
+h1 Home
+
+
+h3 Create Room
+= form_for @room, url: '/roomtitles' do |f|
+	= f.text_field :title, placeholder: 'RoomTitle'
+	= f.submit 'Create'
+
+
+/Myroom
+div = link_to 'My Rooms'
+
+/My Favorite
+div = link_to 'My Favorites'
